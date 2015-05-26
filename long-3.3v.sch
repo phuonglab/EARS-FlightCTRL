@@ -2194,6 +2194,30 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 <package name="1X04">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
@@ -2270,8 +2294,38 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 <rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="21"/>
 </package>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <symbols>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
 <symbol name="PINHD4">
 <wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-5.08" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
@@ -2286,6 +2340,32 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="PINHD-1X4" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
@@ -2639,6 +2719,91 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="RFM69HW">
+<packages>
+<package name="RFM69HW">
+<wire x1="-10" y1="7.8" x2="9.7" y2="7.8" width="0" layer="21"/>
+<wire x1="9.7" y1="7.8" x2="9.7" y2="-8.2" width="0" layer="21"/>
+<wire x1="9.7" y1="-8.2" x2="-10" y2="-8.2" width="0" layer="21"/>
+<wire x1="-10" y1="-8.2" x2="-10" y2="7.8" width="0" layer="21"/>
+<smd name="3.3V" x="-9" y="-7.2" dx="2" dy="1.2" layer="1"/>
+<smd name="DIO5" x="-9" y="-5.2" dx="2" dy="1.2" layer="1"/>
+<smd name="DIO4" x="-9" y="-3.2" dx="2" dy="1.2" layer="1"/>
+<smd name="DIO3" x="-9" y="-1.2" dx="2" dy="1.2" layer="1"/>
+<smd name="DIO2" x="-9" y="0.8" dx="2" dy="1.2" layer="1"/>
+<smd name="DIO1" x="-9" y="2.8" dx="2" dy="1.2" layer="1"/>
+<smd name="DIO0" x="-9" y="4.8" dx="2" dy="1.2" layer="1"/>
+<smd name="RST" x="-9" y="6.8" dx="2" dy="1.2" layer="1"/>
+<smd name="GND" x="8.7" y="-7.2" dx="2" dy="1.2" layer="1"/>
+<smd name="ANT" x="8.7" y="-5.2" dx="2" dy="1.2" layer="1"/>
+<smd name="GND_2" x="8.7" y="-3.2" dx="2" dy="1.2" layer="1"/>
+<smd name="SCK" x="8.7" y="-1.2" dx="2" dy="1.2" layer="1"/>
+<smd name="MISO" x="8.7" y="0.8" dx="2" dy="1.2" layer="1"/>
+<smd name="MOSI" x="8.7" y="2.8" dx="2" dy="1.2" layer="1"/>
+<smd name="NSS" x="8.7" y="4.8" dx="2" dy="1.2" layer="1"/>
+<smd name="NC" x="8.7" y="6.8" dx="2" dy="1.2" layer="1"/>
+<text x="-4.5" y="-0.6" size="1.27" layer="25">RFM69HW</text>
+<wire x1="-1.5" y1="7.8" x2="1.5" y2="7.8" width="0" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RFM69HW">
+<pin name="P$1" x="-15.24" y="17.78" length="middle"/>
+<pin name="P$2" x="-15.24" y="12.7" length="middle"/>
+<pin name="P$3" x="-15.24" y="7.62" length="middle"/>
+<pin name="P$4" x="-15.24" y="2.54" length="middle"/>
+<pin name="P$5" x="-15.24" y="-2.54" length="middle"/>
+<pin name="P$6" x="-15.24" y="-7.62" length="middle"/>
+<pin name="P$7" x="-15.24" y="-12.7" length="middle"/>
+<pin name="P$8" x="-15.24" y="-17.78" length="middle"/>
+<pin name="P$9" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="P$10" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="P$11" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="P$12" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$13" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="P$14" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="P$15" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="P$16" x="15.24" y="17.78" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="98"/>
+<wire x1="10.16" y1="20.32" x2="10.16" y2="-20.32" width="0.254" layer="98"/>
+<wire x1="10.16" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="98"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="20.32" width="0.254" layer="98"/>
+<text x="-10.16" y="22.86" size="1.27" layer="98">RFM69HW</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RFM69HW">
+<gates>
+<gate name="G$1" symbol="RFM69HW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFM69HW">
+<connects>
+<connect gate="G$1" pin="P$1" pad="RST"/>
+<connect gate="G$1" pin="P$10" pad="ANT"/>
+<connect gate="G$1" pin="P$11" pad="GND_2"/>
+<connect gate="G$1" pin="P$12" pad="SCK"/>
+<connect gate="G$1" pin="P$13" pad="MISO"/>
+<connect gate="G$1" pin="P$14" pad="MOSI"/>
+<connect gate="G$1" pin="P$15" pad="NSS"/>
+<connect gate="G$1" pin="P$16" pad="NC"/>
+<connect gate="G$1" pin="P$2" pad="DIO0"/>
+<connect gate="G$1" pin="P$3" pad="DIO1"/>
+<connect gate="G$1" pin="P$4" pad="DIO2"/>
+<connect gate="G$1" pin="P$5" pad="DIO3"/>
+<connect gate="G$1" pin="P$6" pad="DIO4"/>
+<connect gate="G$1" pin="P$7" pad="DIO5"/>
+<connect gate="G$1" pin="P$8" pad="3.3V"/>
+<connect gate="G$1" pin="P$9" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2665,16 +2830,17 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 <part name="JP7" library="SparkFun" deviceset="M02" device="-JST-2MM-SMT" value="LiPo Battery"/>
 <part name="X1" library="SparkFun" deviceset="USB" device="-MICROB" value="Micro USB"/>
 <part name="U$2" library="Ava" deviceset="UBLOX_MAX" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="JP6" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP8" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="JP9" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="U4" library="adxl375bccz" deviceset="ADXL375BCCZ" device=""/>
 <part name="U$1" library="STM32F411CEU6" deviceset="STM32F411CEU6" device=""/>
+<part name="U$3" library="RFM69HW" deviceset="RFM69HW" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2702,16 +2868,17 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 </instance>
 <instance part="X1" gate="G$1" x="66.04" y="43.18" rot="MR0"/>
 <instance part="U$2" gate="G$1" x="187.96" y="119.38"/>
-<instance part="JP1" gate="A" x="238.76" y="124.46"/>
-<instance part="JP2" gate="A" x="251.46" y="124.46"/>
+<instance part="JP1" gate="G$1" x="238.76" y="124.46"/>
+<instance part="JP2" gate="G$1" x="251.46" y="124.46"/>
 <instance part="JP3" gate="A" x="264.16" y="124.46"/>
 <instance part="JP4" gate="A" x="276.86" y="124.46"/>
-<instance part="JP5" gate="A" x="238.76" y="104.14"/>
-<instance part="JP6" gate="A" x="251.46" y="104.14"/>
+<instance part="JP5" gate="G$1" x="238.76" y="104.14"/>
+<instance part="JP6" gate="G$1" x="251.46" y="104.14"/>
 <instance part="JP8" gate="A" x="264.16" y="104.14"/>
 <instance part="JP9" gate="A" x="276.86" y="104.14"/>
 <instance part="U4" gate="A" x="322.58" y="119.38"/>
 <instance part="U$1" gate="G$1" x="106.68" y="132.08"/>
+<instance part="U$3" gate="G$1" x="246.38" y="182.88"/>
 </instances>
 <busses>
 </busses>
@@ -2802,6 +2969,39 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 <pinref part="U2" gate="G$1" pin="VIN"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="X1" gate="G$1" pin="VBUS"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VDD"/>
+<wire x1="86.36" y1="93.98" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="93.98" x2="81.28" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="157.48" x2="127" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="127" y1="157.48" x2="127" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VDD_3"/>
+<wire x1="127" y1="152.4" x2="121.92" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="127" y1="152.4" x2="127" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VDD_2"/>
+<wire x1="127" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+<junction x="127" y="152.4"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VSS"/>
+<wire x1="86.36" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="96.52" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="83.82" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VSS_2"/>
+<wire x1="129.54" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="119.38" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VSS_3"/>
+<wire x1="129.54" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PAD"/>
+<junction x="104.14" y="83.82"/>
+<junction x="129.54" y="119.38"/>
 </segment>
 </net>
 </nets>
