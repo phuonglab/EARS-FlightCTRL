@@ -7843,6 +7843,9 @@ www.irf.com&lt;p&gt;
 <part name="R6" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="3k3"/>
 <part name="R8" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="3k3"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>
+<part name="R9" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="R10" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7922,6 +7925,9 @@ www.irf.com&lt;p&gt;
 <instance part="R6" gate="G$1" x="172.72" y="66.04" rot="R270"/>
 <instance part="R8" gate="G$1" x="177.8" y="66.04" rot="R270"/>
 <instance part="C15" gate="G$1" x="22.86" y="81.28"/>
+<instance part="R9" gate="G$1" x="185.42" y="66.04" rot="R270"/>
+<instance part="R10" gate="G$1" x="185.42" y="50.8" rot="R270"/>
+<instance part="GND6" gate="1" x="185.42" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -8090,6 +8096,11 @@ www.irf.com&lt;p&gt;
 <wire x1="215.9" y1="63.5" x2="215.9" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="43.18" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
@@ -8107,6 +8118,16 @@ www.irf.com&lt;p&gt;
 <pinref part="IC1" gate="G$1" pin="IN"/>
 <wire x1="111.76" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
 <label x="109.22" y="38.1" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="71.12" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
+<label x="185.42" y="73.66" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="4"/>
+<wire x1="243.84" y1="63.5" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
+<label x="248.92" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8570,18 +8591,6 @@ www.irf.com&lt;p&gt;
 <label x="248.92" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PB1"/>
-<wire x1="35.56" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
-<label x="27.94" y="93.98" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="4"/>
-<wire x1="243.84" y1="63.5" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
-<label x="248.92" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="I2C_SDA" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -8750,6 +8759,22 @@ www.irf.com&lt;p&gt;
 <pinref part="U$1" gate="G$1" pin="PA5"/>
 <wire x1="35.56" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
 <label x="27.94" y="104.14" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="V_MEAS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB1"/>
+<wire x1="35.56" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<label x="27.94" y="93.98" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="55.88" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="58.42" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="58.42" x2="187.96" y2="58.42" width="0.1524" layer="91"/>
+<junction x="185.42" y="58.42"/>
+<label x="187.96" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
