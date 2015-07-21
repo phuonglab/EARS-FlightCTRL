@@ -6159,6 +6159,8 @@ www.irf.com&lt;p&gt;
 <part name="U$9" library="Ava" deviceset="JTI_ANTENNA-1575AT43A40" device=""/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -6220,9 +6222,11 @@ www.irf.com&lt;p&gt;
 <instance part="X1" gate="-4" x="231.14" y="17.78"/>
 <instance part="X1" gate="-5" x="231.14" y="15.24"/>
 <instance part="JP5" gate="G$1" x="259.08" y="20.32" rot="R180"/>
-<instance part="U$9" gate="G$1" x="12.7" y="99.06" rot="R180"/>
+<instance part="U$9" gate="G$1" x="-7.62" y="99.06" rot="R180"/>
 <instance part="C8" gate="G$1" x="139.7" y="91.44"/>
 <instance part="C9" gate="G$1" x="238.76" y="83.82"/>
+<instance part="C10" gate="G$1" x="5.08" y="99.06" rot="R90"/>
+<instance part="C11" gate="G$1" x="17.78" y="101.6" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6243,6 +6247,10 @@ www.irf.com&lt;p&gt;
 <wire x1="22.86" y1="93.98" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
 <junction x="22.86" y="93.98"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="104.14" x2="22.86" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
+<junction x="22.86" y="104.14"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -6833,9 +6841,19 @@ www.irf.com&lt;p&gt;
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="11_RF_IN"/>
 <pinref part="U$9" gate="G$1" pin="FEED"/>
-<wire x1="20.32" y1="99.06" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="0" y1="99.06" x2="2.54" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="99.06" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="11_RF_IN"/>
+<wire x1="17.78" y1="99.06" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
+<junction x="17.78" y="99.06"/>
 </segment>
 </net>
 </nets>
