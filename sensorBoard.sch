@@ -5755,16 +5755,15 @@ Source: AVX .. aphvc.pdf</description>
 </library>
 <library name="mattsLib">
 <packages>
-<package name="KSSG74B16">
-<smd name="P$1" x="-3.5" y="-3.5" dx="2.5" dy="2.5" layer="1"/>
-<smd name="P$2" x="-3.5" y="3.5" dx="2.5" dy="2.5" layer="1"/>
-<smd name="P$3" x="3.5" y="3.5" dx="2.5" dy="2.5" layer="1"/>
-<smd name="P$4" x="3.5" y="-3.5" dx="2.5" dy="2.5" layer="1"/>
-<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.127" layer="21"/>
-<wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
-<wire x1="4" y1="4" x2="4" y2="-4" width="0.127" layer="21"/>
-<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.127" layer="21"/>
-<text x="-6" y="-4" size="1.27" layer="21">+</text>
+<package name="KSSG23J12">
+<smd name="+" x="-1.9" y="-1.75" dx="0.7" dy="1.1" layer="1" rot="R90"/>
+<smd name="-" x="1.9" y="-1.75" dx="0.7" dy="1.1" layer="1" rot="R90"/>
+<smd name="P$3" x="-1.9" y="1.75" dx="0.7" dy="1.1" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.5" x2="2.5" y2="1.5" width="0.127" layer="21"/>
 </package>
 <package name="PCAL9554B">
 <smd name="A0" x="-0.25" y="1.55" dx="0.9" dy="0.24" layer="1" rot="R90"/>
@@ -5801,7 +5800,7 @@ Source: AVX .. aphvc.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="KSSG74B16">
+<symbol name="KSSG23J12">
 <pin name="-" x="0" y="-7.62" length="middle" rot="R90"/>
 <pin name="+" x="0" y="7.62" length="middle" rot="R270"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
@@ -5872,15 +5871,15 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="KSSG74B16">
+<deviceset name="KSSG23J12">
 <gates>
-<gate name="G$1" symbol="KSSG74B16" x="-2.54" y="0"/>
+<gate name="G$1" symbol="KSSG23J12" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="KSSG74B16">
+<device name="" package="KSSG23J12">
 <connects>
-<connect gate="G$1" pin="+" pad="P$1 P$4"/>
-<connect gate="G$1" pin="-" pad="P$2 P$3"/>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6140,7 +6139,7 @@ www.irf.com&lt;p&gt;
 </part>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="U$3" library="mattsLib" deviceset="KSSG74B16" device="">
+<part name="U$3" library="mattsLib" deviceset="KSSG23J12" device="">
 <attribute name="OC_FARNELL" value="2215090"/>
 </part>
 <part name="Q1" library="transistor-small-signal" deviceset="BSS84" device=""/>
