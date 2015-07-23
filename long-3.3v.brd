@@ -192,9 +192,9 @@
 <text x="4.1" y="41" size="0.8" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-right">SCL</text>
 <text x="4.1" y="40.3" size="0.8" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-right">VCC</text>
 <text x="4.1" y="39.6" size="0.8" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-right">GND</text>
-<text x="7.3" y="41" size="0.8" layer="26" font="vector" ratio="20" rot="MR0">SDA</text>
-<text x="7.3" y="40.3" size="0.8" layer="26" font="vector" ratio="20" rot="MR0">RX</text>
-<text x="7.3" y="39.6" size="0.8" layer="26" font="vector" ratio="20" rot="MR0">TX</text>
+<text x="13.5" y="41" size="0.8" layer="26" font="vector" ratio="20" rot="MR0">SDA</text>
+<text x="13.5" y="40.3" size="0.8" layer="26" font="vector" ratio="20" rot="MR0">RX</text>
+<text x="13.5" y="39.6" size="0.8" layer="26" font="vector" ratio="20" rot="MR0">TX</text>
 <text x="6.3" y="16.7" size="0.8" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-right">GPIO1</text>
 <text x="6.3" y="15.7" size="0.8" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-right">GPIO2</text>
 <text x="6.3" y="14.7" size="0.8" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-right">GPIO3</text>
