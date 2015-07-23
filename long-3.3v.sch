@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7849,7 +7849,7 @@ www.irf.com&lt;p&gt;
 <part name="R10" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0402"/>
-<part name="C17" library="rcl" deviceset="C-EU" device="C0402"/>
+<part name="L1" library="rcl" deviceset="C-EU" device="C0402"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun" deviceset="LED" device="0603" value="POWER"/>
 <part name="R11" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="330"/>
@@ -7939,7 +7939,7 @@ www.irf.com&lt;p&gt;
 <instance part="R10" gate="G$1" x="185.42" y="50.8" rot="R270"/>
 <instance part="GND6" gate="1" x="185.42" y="40.64"/>
 <instance part="C16" gate="G$1" x="248.92" y="106.68" rot="R90"/>
-<instance part="C17" gate="G$1" x="246.38" y="101.6" rot="R180"/>
+<instance part="L1" gate="G$1" x="246.38" y="101.6" rot="R180"/>
 <instance part="GND8" gate="1" x="198.12" y="132.08"/>
 <instance part="D1" gate="G$1" x="0" y="63.5"/>
 <instance part="R11" gate="G$1" x="0" y="73.66" rot="R90"/>
@@ -8051,7 +8051,7 @@ www.irf.com&lt;p&gt;
 <wire x1="261.62" y1="96.52" x2="246.38" y2="96.52" width="0.1524" layer="91"/>
 <junction x="261.62" y="99.06"/>
 <junction x="243.84" y="96.52"/>
-<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="96.52" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="99.06" x2="246.38" y2="96.52" width="0.1524" layer="91"/>
 <junction x="246.38" y="96.52"/>
@@ -8813,7 +8813,7 @@ www.irf.com&lt;p&gt;
 <net name="N$5" class="0">
 <segment>
 <pinref part="C16" gate="G$1" pin="1"/>
-<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="U$3" gate="G$1" pin="P$10"/>
 <wire x1="238.76" y1="106.68" x2="246.38" y2="106.68" width="0.1524" layer="91"/>
 <junction x="246.38" y="106.68"/>
