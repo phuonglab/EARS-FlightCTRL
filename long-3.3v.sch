@@ -3094,7 +3094,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <smd name="MOSI" x="8.7" y="2.8" dx="2" dy="1.2" layer="1"/>
 <smd name="NSS" x="8.7" y="4.8" dx="2" dy="1.2" layer="1"/>
 <smd name="NC" x="8.7" y="6.8" dx="2" dy="1.2" layer="1"/>
-<text x="-4.5" y="-0.6" size="1.27" layer="25">RFM69HW</text>
+<text x="-4.5" y="-0.6" size="1.27" layer="25" font="vector">&gt;Name</text>
 <wire x1="-1.5" y1="7.8" x2="1.5" y2="7.8" width="0" layer="21" curve="180"/>
 </package>
 </packages>
