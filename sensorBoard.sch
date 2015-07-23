@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8576,7 +8576,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="L1" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
 <part name="D1" library="diode" deviceset="BAT60J" device="">
 <attribute name="OC_FARNELL" value="1466524"/>
@@ -8649,7 +8649,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <instance part="C8" gate="G$1" x="139.7" y="71.12"/>
 <instance part="C9" gate="G$1" x="238.76" y="83.82"/>
 <instance part="C10" gate="G$1" x="5.08" y="99.06" rot="R90"/>
-<instance part="C11" gate="G$1" x="17.78" y="101.6" rot="R180"/>
+<instance part="L1" gate="G$1" x="17.78" y="101.6" rot="R180"/>
 <instance part="C12" gate="G$1" x="137.16" y="66.04"/>
 <instance part="D1" gate="G$1" x="185.42" y="38.1" rot="R90">
 <attribute name="OC_FARNELL" x="185.42" y="38.1" size="1.778" layer="96" rot="R90" display="off"/>
@@ -8677,7 +8677,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <wire x1="22.86" y1="93.98" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
 <junction x="22.86" y="93.98"/>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="104.14" x2="22.86" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
 <junction x="22.86" y="104.14"/>
@@ -9324,7 +9324,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <net name="N$7" class="0">
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
-<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="99.06" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="11_RF_IN"/>
 <wire x1="17.78" y1="99.06" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
