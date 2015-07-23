@@ -11729,6 +11729,11 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0402" value="470n"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0402" value="10k"/>
 <part name="U$10" library="earsLogo" deviceset="EARS-LOGO" device=""/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0402" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -11770,11 +11775,11 @@ Source: www.st.com, BAT60J.pdf</description>
 </instance>
 <instance part="P+6" gate="VCC" x="142.24" y="81.28"/>
 <instance part="GND7" gate="1" x="139.7" y="58.42"/>
-<instance part="U$3" gate="G$1" x="193.04" y="38.1">
-<attribute name="OC_FARNELL" x="193.04" y="38.1" size="1.778" layer="96" display="off"/>
+<instance part="U$3" gate="G$1" x="198.12" y="38.1">
+<attribute name="OC_FARNELL" x="198.12" y="38.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="Q1" gate="G$1" x="193.04" y="22.86"/>
-<instance part="GND8" gate="1" x="193.04" y="12.7"/>
+<instance part="Q1" gate="G$1" x="198.12" y="22.86"/>
+<instance part="GND8" gate="1" x="198.12" y="12.7"/>
 <instance part="U$4" gate="G$1" x="218.44" y="78.74"/>
 <instance part="P+7" gate="VCC" x="218.44" y="104.14"/>
 <instance part="GND9" gate="1" x="218.44" y="63.5"/>
@@ -11796,13 +11801,18 @@ Source: www.st.com, BAT60J.pdf</description>
 <instance part="C10" gate="G$1" x="5.08" y="99.06" rot="R90"/>
 <instance part="L1" gate="G$1" x="17.78" y="101.6" rot="R180"/>
 <instance part="C12" gate="G$1" x="137.16" y="66.04"/>
-<instance part="D1" gate="G$1" x="185.42" y="38.1" rot="R90">
-<attribute name="OC_FARNELL" x="185.42" y="38.1" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="D1" gate="G$1" x="190.5" y="38.1" rot="R90">
+<attribute name="OC_FARNELL" x="190.5" y="38.1" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND11" gate="1" x="127" y="78.74"/>
 <instance part="C13" gate="G$1" x="119.38" y="22.86"/>
 <instance part="R1" gate="G$1" x="119.38" y="12.7" rot="R90"/>
 <instance part="U$10" gate="G$1" x="2.54" y="0"/>
+<instance part="R2" gate="G$1" x="187.96" y="30.48" rot="R90"/>
+<instance part="R3" gate="G$1" x="213.36" y="48.26" rot="R90"/>
+<instance part="R4" gate="G$1" x="226.06" y="48.26" rot="R90"/>
+<instance part="R5" gate="G$1" x="241.3" y="48.26" rot="R90"/>
+<instance part="R6" gate="G$1" x="254" y="48.26" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -11928,7 +11938,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="193.04" y1="15.24" x2="193.04" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="15.24" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VSS"/>
@@ -11984,12 +11994,32 @@ Source: www.st.com, BAT60J.pdf</description>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="+"/>
-<wire x1="193.04" y1="45.72" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
-<label x="193.04" y="48.26" size="1.778" layer="95"/>
+<wire x1="198.12" y1="45.72" x2="198.12" y2="48.26" width="0.1524" layer="91"/>
+<label x="198.12" y="48.26" size="1.778" layer="95"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="185.42" y1="40.64" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="45.72" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
-<junction x="193.04" y="45.72"/>
+<wire x1="190.5" y1="40.64" x2="190.5" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="45.72" x2="198.12" y2="45.72" width="0.1524" layer="91"/>
+<junction x="198.12" y="45.72"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="35.56" x2="187.96" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="45.72" x2="190.5" y2="45.72" width="0.1524" layer="91"/>
+<junction x="190.5" y="45.72"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="53.34" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="55.88" x2="241.3" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="55.88" x2="254" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="254" y1="55.88" x2="254" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="53.34" x2="241.3" y2="55.88" width="0.1524" layer="91"/>
+<junction x="241.3" y="55.88"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="53.34" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
+<junction x="226.06" y="55.88"/>
+<label x="213.36" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPS_RX" class="0">
@@ -12090,8 +12120,11 @@ Source: www.st.com, BAT60J.pdf</description>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
-<wire x1="187.96" y1="25.4" x2="185.42" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="25.4" x2="187.96" y2="25.4" width="0.1524" layer="91"/>
 <label x="185.42" y="25.4" size="1.778" layer="95" rot="R180"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="25.4" x2="185.42" y2="25.4" width="0.1524" layer="91"/>
+<junction x="187.96" y="25.4"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
@@ -12309,11 +12342,11 @@ Source: www.st.com, BAT60J.pdf</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="-"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="193.04" y1="27.94" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="27.94" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="185.42" y1="35.56" x2="185.42" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="30.48" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
-<junction x="193.04" y="30.48"/>
+<wire x1="190.5" y1="35.56" x2="190.5" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="30.48" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
+<junction x="198.12" y="30.48"/>
 </segment>
 </net>
 <net name="HP0" class="0">
@@ -12416,7 +12449,10 @@ Source: www.st.com, BAT60J.pdf</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="G"/>
 <wire x1="215.9" y1="43.18" x2="213.36" y2="43.18" width="0.1524" layer="91"/>
-<label x="213.36" y="43.18" size="1.778" layer="95"/>
+<label x="210.82" y="43.18" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
+<junction x="213.36" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P0"/>
@@ -12428,7 +12464,10 @@ Source: www.st.com, BAT60J.pdf</description>
 <segment>
 <pinref part="U$6" gate="G$1" pin="G"/>
 <wire x1="228.6" y1="43.18" x2="226.06" y2="43.18" width="0.1524" layer="91"/>
-<label x="226.06" y="43.18" size="1.778" layer="95"/>
+<label x="223.52" y="43.18" size="1.778" layer="95"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="43.18" x2="223.52" y2="43.18" width="0.1524" layer="91"/>
+<junction x="226.06" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P1"/>
@@ -12440,7 +12479,10 @@ Source: www.st.com, BAT60J.pdf</description>
 <segment>
 <pinref part="U$7" gate="G$1" pin="G"/>
 <wire x1="243.84" y1="43.18" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
-<label x="241.3" y="43.18" size="1.778" layer="95"/>
+<label x="238.76" y="43.18" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="43.18" x2="238.76" y2="43.18" width="0.1524" layer="91"/>
+<junction x="241.3" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P2"/>
@@ -12452,7 +12494,10 @@ Source: www.st.com, BAT60J.pdf</description>
 <segment>
 <pinref part="U$8" gate="G$1" pin="G"/>
 <wire x1="256.54" y1="43.18" x2="254" y2="43.18" width="0.1524" layer="91"/>
-<label x="254" y="43.18" size="1.778" layer="95"/>
+<label x="251.46" y="43.18" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="254" y1="43.18" x2="251.46" y2="43.18" width="0.1524" layer="91"/>
+<junction x="254" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P3"/>
